@@ -7,5 +7,6 @@ const router: Router = Router();
 const boardController = new BoardController(new BoardService());
 
 router.post("/",authMiddleware, boardController.createBoard);
+router.get("/",authMiddleware, boardController.getUserBoards);
 
 export default router;

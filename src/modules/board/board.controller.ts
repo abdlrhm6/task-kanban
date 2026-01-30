@@ -6,6 +6,12 @@ export class BoardController {
     constructor(private boardService: BoardService) {}
 
 
+    getUserBoards = async (req: Request, res: Response): Promise<void> => {
+        const userId = (req as any).userId;
+        const result = await this.boardService.getUserBoards(userId);
+        res.status(200).json(result);
+    };
+
     createBoard = async (req: Request, res: Response): Promise<void> => {
        const validatedData = CreateBoardSchema.parse(req.body);
        const userId = (req as any).userId;
