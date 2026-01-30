@@ -1,6 +1,7 @@
 import express from "express";
 import "dotenv/config";
 import authRoutes from "./modules/auth/auth.routes.js";
+import boardRoutes from "./modules/board/board.route.js";
 import { errorHandler } from "./middleware/error.middleware.js";
 
 const app = express();
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 
 app.use("/api/auth", authRoutes);
+app.use("/api/board", boardRoutes);
 app.use(errorHandler);
 
 
