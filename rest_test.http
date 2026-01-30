@@ -1,0 +1,27 @@
+
+//register user
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "admin",
+    "email": "admin@example.com",
+    "password": "Aqzsw321"
+}
+
+###
+//login user
+
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "Aqzsw321"
+}
+
+###
+//get user profile
+GET http://localhost:3000/api/auth/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlNzY5MzYwZC1lZDM4LTRhMzUtYWI0Mi00NWUzYTc3OWJiOTMiLCJpYXQiOjE3Njk3Njg3MTEsImV4cCI6MTc3MDM3MzUxMX0.LX6RskhQGtFkT6iyKzZer-UFf-pgtTUCPLI63W5lO7E
