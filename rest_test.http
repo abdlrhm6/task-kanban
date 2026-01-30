@@ -43,3 +43,26 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlNzY5M
 GET http://localhost:3000/api/board
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlNzY5MzYwZC1lZDM4LTRhMzUtYWI0Mi00NWUzYTc3OWJiOTMiLCJpYXQiOjE3Njk3Njg3MTEsImV4cCI6MTc3MDM3MzUxMX0.LX6RskhQGtFkT6iyKzZer-UFf-pgtTUCPLI63W5lO7E
+
+###
+//get board by id
+GET http://localhost:3000/api/board/85cfa5bb-f958-4468-9ed9-7ce429619f40
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlNzY5MzYwZC1lZDM4LTRhMzUtYWI0Mi00NWUzYTc3OWJiOTMiLCJpYXQiOjE3Njk3Njg3MTEsImV4cCI6MTc3MDM3MzUxMX0.LX6RskhQGtFkT6iyKzZer-UFf-pgtTUCPLI63W5lO7E
+
+###
+//update board
+PUT http://localhost:3000/api/board/85cfa5bb-f958-4468-9ed9-7ce429619f40
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlNzY5MzYwZC1lZDM4LTRhMzUtYWI0Mi00NWUzYTc3OWJiOTMiLCJpYXQiOjE3Njk3Njg3MTEsImV4cCI6MTc3MDM3MzUxMX0.LX6RskhQGtFkT6iyKzZer-UFf-pgtTUCPLI63W5lO7E
+
+{
+    "title": "board-edited",
+    "description": "edited"
+}
+
+###
+//delete board
+DELETE http://localhost:3000/api/board/85cfa5bb-f958-4468-9ed9-7ce429619f40
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlNzY5MzYwZC1lZDM4LTRhMzUtYWI0Mi00NWUzYTc3OWJiOTMiLCJpYXQiOjE3Njk3Njg3MTEsImV4cCI6MTc3MDM3MzUxMX0.LX6RskhQGtFkT6iyKzZer-UFf-pgtTUCPLI63W5lO7E

@@ -8,5 +8,8 @@ const boardController = new BoardController(new BoardService());
 
 router.post("/",authMiddleware, boardController.createBoard);
 router.get("/",authMiddleware, boardController.getUserBoards);
+router.get("/:id",authMiddleware, boardController.getBoardById);
+router.put("/:id",authMiddleware, boardController.updateBoard);
+router.delete("/:id",authMiddleware, boardController.deleteBoard);
 
 export default router;
